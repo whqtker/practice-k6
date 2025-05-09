@@ -1,4 +1,5 @@
 // K6_WEB_DASHBOARD=true k6 run test3.js: 테스트 과정을 웹 대시보드에서 볼 수 있음
+// k6 run --out influxdb=localhost:8086/k6 test3.js: 결과를 influxdb에 저장하여 grafana 대시보드에서 볼 수 있음
 
 import http from 'k6/http';
 import { sleep } from 'k6';
