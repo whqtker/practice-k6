@@ -1,3 +1,6 @@
+// k6 run test1.js
+// k6 run --out json=result.json test1.js: result.json이라는 파일로 결과를 추출
+
 import http from "k6/http";
 import { sleep } from "k6";
 
